@@ -271,6 +271,22 @@ a:hover {
   margin-top: 32px;
 }
 
+.hero-note {
+  margin: 20px 0 0;
+  font-size: 14px;
+  color: var(--text-3);
+}
+
+code {
+  font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 1px 6px;
+  overflow-wrap: anywhere;
+}
+
 /* App window concept */
 
 .mock-wrap {
