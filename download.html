@@ -4,20 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Download — YTFast</title>
-  <meta name="description" content="Get YTFast for Windows or Mac from GitHub, with what you need and what happens on the first run.">
+  <meta name="description" content="Download YTFast for Windows or Mac. Free for 14 days, then $4 once. What you need, and what happens the first time you open it.">
   <link rel="canonical" href="https://ytmfast.com/download">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="YTFast">
   <meta property="og:title" content="Download — YTFast">
-  <meta property="og:description" content="Get YTFast for Windows or Mac from GitHub, with what you need and what happens on the first run.">
+  <meta property="og:description" content="Download YTFast for Windows or Mac. Free for 14 days, then $4 once.">
   <meta property="og:url" content="https://ytmfast.com/download">
   <meta property="og:image" content="https://ytmfast.com/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#131316">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="page">
@@ -30,68 +33,76 @@
       <nav class="nav-links" id="nav-links" aria-label="Main">
         <a href="what-is-ytfast.html">Guide</a>
         <a href="pricing.html">Pricing</a>
-        <a href="custom-apps.html">Custom apps</a>
         <a href="faq.html">FAQ</a>
         <a href="about.html">About</a>
-        <a href="https://github.com/Likheet/YTFast">GitHub</a>
-        <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
         <a class="btn btn-primary nav-cta" href="download.html" aria-current="page">Download</a>
       </nav>
     </div>
   </header>
 
-  <main id="content" class="prose">
-    <h1>Download</h1>
-    <p class="lead">YTFast runs on Windows and on Macs with Apple Silicon. Builds are published on GitHub.</p>
-
-    <div class="actions">
-      <a class="btn btn-primary" href="https://github.com/Likheet/YTFast/releases/latest/download/YTFast-for-Windows.zip">Download for Windows</a>
-      <a class="btn btn-alt" href="https://github.com/Likheet/YTFast/releases/latest/download/YTFast-for-Mac.zip">Download for Mac</a>
-      <a class="btn btn-alt" href="https://github.com/Likheet/YTFast/blob/main/docs/run-the-app.md">Step-by-step guide</a>
-    </div>
-
-    <div class="note">
-      <strong>Free builds come as a zip</strong>
-      Download the zip for your computer, unzip it, and open YTFast. The step-by-step guide covers the first run. Ready-made installers and automatic updates are part of <a href="pricing.html">YTFast Pro</a>.
-    </div>
-
-    <h2 id="platforms">Platforms</h2>
-    <div class="grid platforms">
-      <div class="card">
-        <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>
-        <h3>Windows</h3>
-        <p>64-bit, Intel or AMD. Sign in with Firefox.</p>
-        <p><a href="https://github.com/Likheet/YTFast/releases/latest/download/YTFast-for-Windows.zip">YTFast-for-Windows.zip</a></p>
+  <main id="content">
+    <section class="container dl-hero">
+      <h1>Download YTFast</h1>
+      <p class="lead">The full app, free for 14 days. For Windows, and for Macs with Apple Silicon.</p>
+      <div class="actions">
+        <a class="btn btn-primary" data-download="primary" href="https://github.com/Likheet/ytfast-releases/releases/latest/download/YTFast-for-Windows.zip"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span data-label>Download for Windows</span></a>
+        <a class="btn btn-alt" data-download="alt" href="https://github.com/Likheet/ytfast-releases/releases/latest/download/YTFast-for-Mac.zip">Download for Mac</a>
       </div>
-      <div class="card">
-        <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10H4z"/><path d="M2 19h20"/></svg></div>
-        <h3>Mac with Apple Silicon</h3>
-        <p>M1 or newer. Sign in with Chrome, Firefox, Edge, Brave or Safari.</p>
-        <p><a href="https://github.com/Likheet/YTFast/releases/latest/download/YTFast-for-Mac.zip">YTFast-for-Mac.zip</a></p>
+      <p class="hero-note">About 8 MB. Needs YouTube Music Premium. After 14 days, <a href="pricing.html">Pro is US$4 once</a>.</p>
+    </section>
+
+    <div class="prose">
+      <h2 id="platforms">Which file to get</h2>
+      <div class="grid platforms">
+        <div class="card">
+          <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>
+          <h3>Windows</h3>
+          <p>64-bit, Intel or AMD. Sign in with Firefox.</p>
+          <p><a href="https://github.com/Likheet/ytfast-releases/releases/latest/download/YTFast-for-Windows.zip">YTFast-for-Windows.zip</a></p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10H4z"/><path d="M2 19h20"/></svg></div>
+          <h3>Mac with Apple Silicon</h3>
+          <p>M1 or newer. Sign in with Chrome, Firefox, Edge, Brave or Safari.</p>
+          <p><a href="https://github.com/Likheet/ytfast-releases/releases/latest/download/YTFast-for-Mac.zip">YTFast-for-Mac.zip</a></p>
+        </div>
       </div>
+      <p>Macs with an Intel processor are not supported yet. On Windows, Chrome, Edge and Brave lock their sign-in data so that other programs cannot read it. That is why YTFast needs Firefox there.</p>
+
+      <h2 id="what-you-will-need">What you will need</h2>
+      <ul>
+        <li>A YouTube Music <strong>Premium</strong> account.</li>
+        <li>A browser signed in to music.youtube.com with that account.</li>
+        <li>About 250 MB of disk space. The first time you sign in, YTFast downloads two helper programs, yt-dlp and Deno.</li>
+        <li>An internet connection.</li>
+      </ul>
+
+      <h2 id="windows">Open it on Windows</h2>
+      <ol class="steps">
+        <li><strong>Unzip it</strong>Right-click the zip, choose Extract All, then open the extracted folder.</li>
+        <li><strong>Open YTFast.exe</strong>If Windows says "Windows protected your PC", click More info, then Run anyway. Windows asks this once for each new copy, because YTFast is not yet signed with a paid certificate.</li>
+        <li><strong>Choose Firefox</strong>Click Continue. YTFast reads your YouTube Music sign-in from it.</li>
+      </ol>
+      <p>To keep it handy, move YTFast.exe to a folder of your choice, then right-click it and choose Pin to Start or Pin to taskbar.</p>
+
+      <h2 id="mac">Open it on a Mac</h2>
+      <ol class="steps">
+        <li><strong>Unzip it</strong>In Downloads, double-click what you downloaded. In the folder that opens, double-click YTFast-mac.zip.</li>
+        <li><strong>Move it to Applications</strong>Drag YTFast into your Applications folder.</li>
+        <li><strong>Allow it once</strong>Open it. Your Mac says it could not check the app: click Done. Then open System Settings, click Privacy &amp; Security, scroll down and click Open Anyway next to the message about YTFast. You do this once for each new copy.</li>
+        <li><strong>Choose your browser</strong>With Chrome, Edge or Brave, your Mac asks to allow access to the browser's Safe Storage: type your Mac password and click Always Allow. With Safari, click Open Full Disk Access when asked and turn on YTFast.</li>
+      </ol>
+
+      <h2 id="first-run">The first time you sign in</h2>
+      <p>YTFast fetches its two helper programs and gets YouTube Music's player ready. This takes a minute or two and happens once. After that, songs start in about a second, and YTFast signs in by itself each time it opens.</p>
+
+      <div class="note">
+        <strong>When the trial ends</strong>
+        YTFast is free for 14 days. To keep using it, <a href="https://www.paypal.com/ncp/payment/6EYYS2JXDCUHE">buy Pro for US$4</a>, paid once. Pre-ordered at Demo Day? You already have Pro. See <a href="pricing.html">pricing</a>.
+      </div>
+
+      <p>Read <a href="what-is-ytfast.html#before-you-use-it">what to know before you use it</a>, or <a href="mailto:hello@ytmfast.com">email us</a> if something goes wrong.</p>
     </div>
-    <p>On Windows, Chrome, Edge and Brave lock their sign-in data so that other programs cannot read it. That is why YTFast needs Firefox there.</p>
-
-    <h2 id="what-you-will-need">What you will need</h2>
-    <ul>
-      <li>A YouTube Music <strong>Premium</strong> account.</li>
-      <li>A browser signed in to music.youtube.com with that account.</li>
-      <li>About 250 MB of disk space. On first run YTFast downloads two helper programs, yt-dlp and Deno.</li>
-      <li>An internet connection.</li>
-    </ul>
-
-    <h2 id="first-run">The first run</h2>
-    <ol class="steps">
-      <li><strong>Sign in to music.youtube.com</strong>Do this in your browser first. YTFast uses that sign-in.</li>
-      <li><strong>Open YTFast</strong>Windows and macOS warn you the first time, because YTFast is not signed with a paid certificate. The guide shows how to continue.</li>
-      <li><strong>Choose your browser</strong>YTFast reads YouTube's sign-in from it, then fetches its helper programs. This takes a minute or two and happens once.</li>
-      <li><strong>Play</strong>After that, songs start in about a second.</li>
-    </ol>
-
-    <h2 id="source">Build it yourself</h2>
-    <p>YTFast is written in Rust. Clone <a href="https://github.com/Likheet/YTFast">the repository</a> and run <code>cargo run -p ytfast</code>. To look around without an account, run <code>cargo run -p ytfast -- --demo</code>.</p>
-
-    <p>Read <a href="what-is-ytfast.html#before-you-use-it">what to know before you use it</a>.</p>
   </main>
 
   <footer class="footer">
@@ -99,14 +110,14 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="26" height="26">YTFast</a>
-          <p>Low-power desktop apps in Rust. YTFast, for YouTube Music, is the first.</p>
+          <p>A native desktop app for YouTube Music, on Windows and Mac.</p>
         </div>
         <div>
           <p class="footer-title">Product</p>
           <nav aria-label="Product">
-            <a href="what-is-ytfast.html">Guide</a>
             <a href="download.html">Download</a>
             <a href="pricing.html">Pricing</a>
+            <a href="what-is-ytfast.html">Guide</a>
             <a href="faq.html">FAQ</a>
           </nav>
         </div>
@@ -115,7 +126,6 @@
           <nav aria-label="Company">
             <a href="about.html">About</a>
             <a href="custom-apps.html">Custom apps</a>
-            <a href="https://github.com/Likheet/YTFast">GitHub</a>
             <a href="mailto:hello@ytmfast.com">Contact</a>
           </nav>
         </div>

@@ -4,20 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — YTFast</title>
-  <meta name="description" content="Who is building YTFast, why, and how to get in touch.">
+  <meta name="description" content="YTFast is a native YouTube Music app for Windows and Mac, built by Likheet Shetty. How it started, Demo Day, and where it stands.">
   <link rel="canonical" href="https://ytmfast.com/about">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="YTFast">
   <meta property="og:title" content="About — YTFast">
-  <meta property="og:description" content="Who is building YTFast, why, and how to get in touch.">
+  <meta property="og:description" content="YTFast is a native YouTube Music app for Windows and Mac, built by Likheet Shetty.">
   <meta property="og:url" content="https://ytmfast.com/about">
   <meta property="og:image" content="https://ytmfast.com/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#131316">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="page">
@@ -30,37 +33,44 @@
       <nav class="nav-links" id="nav-links" aria-label="Main">
         <a href="what-is-ytfast.html">Guide</a>
         <a href="pricing.html">Pricing</a>
-        <a href="custom-apps.html">Custom apps</a>
         <a href="faq.html">FAQ</a>
         <a href="about.html" aria-current="page">About</a>
-        <a href="https://github.com/Likheet/YTFast">GitHub</a>
-        <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
         <a class="btn btn-primary nav-cta" href="download.html">Download</a>
       </nav>
     </div>
   </header>
 
   <main id="content" class="prose">
-    <h1>About</h1>
-    <p class="lead">We build low-power desktop apps in Rust. YTFast, a native app for YouTube Music, is the first.</p>
+    <h1>About YTFast</h1>
+    <p class="lead">YTFast is a native desktop app for YouTube Music on Windows and Mac. It is built and run by Likheet Shetty.</p>
 
-    <h2 id="business">What we do</h2>
-    <p>We make desktop software that opens at once and costs a computer almost nothing to run. YTFast is our first product: it is free to build yourself, and YTFast Pro, the paid ready-made version, is open for pre-order. See <a href="pricing.html">pricing</a>.</p>
-    <p>We also take on <a href="custom-apps.html">custom apps</a> for companies that want software this light.</p>
+    <figure class="shot">
+      <img src="assets/screens/library.jpg" width="1290" height="820" alt="YTFast's Library, with playlists, albums and artists" loading="lazy">
+      <figcaption>The real app, in demo mode with made-up music.</figcaption>
+    </figure>
 
     <h2 id="why">Why YTFast exists</h2>
     <p>Music players used to be some of the lightest programs on a computer. Today most streaming apps are web pages inside a browser, and they use the CPU and memory to match. YTFast rebuilds YouTube Music as a native app that idles at 0% CPU, stays under 200 MB of memory, and starts songs in about a second.</p>
 
-    <h2 id="who">Who is behind it</h2>
-    <p>YTFast is built and run by <strong>Likheet Shetty</strong>.</p>
-    <p>It follows the path set by <a href="https://github.com/crmne/spotifast">Spotifast</a>, Carmine Paolino's app for Spotify, and is built on <a href="https://github.com/crmne/fastframe">fastframe</a>, the same foundation.</p>
+    <h2 id="so-far">So far</h2>
+    <ol class="timeline">
+      <li><span class="when">April 2026</span><strong>Started building YTFast</strong>A native YouTube Music player, written in Rust.</li>
+      <li><span class="when">UNSW Founders Demo Day</span><strong>More than 30 preorders and reservations</strong>Visitors could pre-order Pro for $4 or reserve a copy before it was public. Everyone who pre-ordered gets Pro.</li>
+      <li><span class="when">8 October 2026</span><strong>Version 0.5 for Windows and Mac</strong>The app now follows YouTube Music's look, screen by screen, and uses less memory.</li>
+      <li><span class="when">October 2026</span><strong>Public downloads and the free trial</strong>Anyone can download YTFast from this site and use it free for 14 days.</li>
+    </ol>
 
-    <h2 id="status">Where it stands</h2>
-    <p>YTFast is at its third version, with builds for Windows and Mac.</p>
+    <h2 id="business">How YTFast makes money</h2>
+    <p>Every download is the full app, free for 14 days. To keep using it, you buy YTFast Pro for US$4, paid once. See <a href="pricing.html">pricing</a>. We also build <a href="custom-apps.html">custom desktop apps</a> for companies that want software this light.</p>
+
+    <h2 id="who">Who is behind it</h2>
+    <p>YTFast is built and run by <strong>Likheet Shetty</strong>. Email <a href="mailto:founder@ytmfast.com">founder@ytmfast.com</a> to reach him directly.</p>
+
+    <h2 id="credits">Credits</h2>
+    <p>YTFast follows the path set by <a href="https://github.com/crmne/spotifast">Spotifast</a>, Carmine Paolino's app for Spotify, and is built on <a href="https://github.com/crmne/fastframe">fastframe</a>, the same foundation. Thanks also to Claude, by Anthropic, for the help along the way.</p>
 
     <h2 id="contact">Contact</h2>
-    <p>For questions, feedback, custom apps, or partnership enquiries, email <a href="mailto:hello@ytmfast.com">hello@ytmfast.com</a>.</p>
-    <p>To report a problem or follow development, visit the project on <a href="https://github.com/Likheet/YTFast">GitHub</a>.</p>
+    <p>For questions, feedback and problems with the app, email <a href="mailto:hello@ytmfast.com">hello@ytmfast.com</a>. For partnerships, custom apps or press, email <a href="mailto:founder@ytmfast.com">founder@ytmfast.com</a>.</p>
 
     <h2 id="trademarks">Trademarks</h2>
     <p>YTFast is an independent project. It is not affiliated with, sponsored by, or endorsed by Google LLC or YouTube. YouTube and YouTube Music are trademarks of Google LLC.</p>
@@ -71,14 +81,14 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="26" height="26">YTFast</a>
-          <p>Low-power desktop apps in Rust. YTFast, for YouTube Music, is the first.</p>
+          <p>A native desktop app for YouTube Music, on Windows and Mac.</p>
         </div>
         <div>
           <p class="footer-title">Product</p>
           <nav aria-label="Product">
-            <a href="what-is-ytfast.html">Guide</a>
             <a href="download.html">Download</a>
             <a href="pricing.html">Pricing</a>
+            <a href="what-is-ytfast.html">Guide</a>
             <a href="faq.html">FAQ</a>
           </nav>
         </div>
@@ -87,7 +97,6 @@
           <nav aria-label="Company">
             <a href="about.html">About</a>
             <a href="custom-apps.html">Custom apps</a>
-            <a href="https://github.com/Likheet/YTFast">GitHub</a>
             <a href="mailto:hello@ytmfast.com">Contact</a>
           </nav>
         </div>

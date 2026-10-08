@@ -13,11 +13,14 @@
   <meta property="og:url" content="https://ytmfast.com/custom-apps">
   <meta property="og:image" content="https://ytmfast.com/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#131316">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="page">
@@ -30,11 +33,8 @@
       <nav class="nav-links" id="nav-links" aria-label="Main">
         <a href="what-is-ytfast.html">Guide</a>
         <a href="pricing.html">Pricing</a>
-        <a href="custom-apps.html" aria-current="page">Custom apps</a>
         <a href="faq.html">FAQ</a>
         <a href="about.html">About</a>
-        <a href="https://github.com/Likheet/YTFast">GitHub</a>
-        <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
         <a class="btn btn-primary nav-cta" href="download.html">Download</a>
       </nav>
     </div>
@@ -45,7 +45,7 @@
     <p class="lead">We build desktop apps in Rust that idle at 0% CPU and stay small in memory. YTFast is the first, and we build apps like it to order.</p>
     <div class="actions">
       <a class="btn btn-primary" href="mailto:hello@ytmfast.com?subject=Custom%20Rust%20app">Email us about an app</a>
-      <a class="btn btn-alt" href="https://github.com/Likheet/YTFast">Read our code</a>
+      <a class="btn btn-alt" href="download.html">Try YTFast</a>
     </div>
 
     <h2 id="why">Why build this way</h2>
@@ -76,7 +76,7 @@
         <p class="stat-label">For a song to start</p>
       </div>
     </div>
-    <p>These are our own figures. The <a href="https://github.com/Likheet/YTFast">source code</a> is public, so you can read how the app is built before you talk to us. The <a href="what-is-ytfast.html">guide</a> explains what it does.</p>
+    <p>These are our own figures. <a href="download.html">Try YTFast free</a> to see them on your own computer before you talk to us. The <a href="what-is-ytfast.html">guide</a> explains what it does.</p>
 
     <h2 id="start">How to start</h2>
     <ol class="steps">
@@ -97,14 +97,14 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="26" height="26">YTFast</a>
-          <p>Low-power desktop apps in Rust. YTFast, for YouTube Music, is the first.</p>
+          <p>A native desktop app for YouTube Music, on Windows and Mac.</p>
         </div>
         <div>
           <p class="footer-title">Product</p>
           <nav aria-label="Product">
-            <a href="what-is-ytfast.html">Guide</a>
             <a href="download.html">Download</a>
             <a href="pricing.html">Pricing</a>
+            <a href="what-is-ytfast.html">Guide</a>
             <a href="faq.html">FAQ</a>
           </nav>
         </div>
@@ -113,7 +113,6 @@
           <nav aria-label="Company">
             <a href="about.html">About</a>
             <a href="custom-apps.html">Custom apps</a>
-            <a href="https://github.com/Likheet/YTFast">GitHub</a>
             <a href="mailto:hello@ytmfast.com">Contact</a>
           </nav>
         </div>

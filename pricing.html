@@ -4,20 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pricing — YTFast</title>
-  <meta name="description" content="YTFast is free to build yourself. YTFast Pro is $4 once with installers, automatic updates and support. Custom Rust apps for companies are priced by project.">
+  <meta name="description" content="Try YTFast free for 14 days. YTFast Pro is US$4, paid once, with updates and priority support. Custom Rust apps for companies are priced by project.">
   <link rel="canonical" href="https://ytmfast.com/pricing">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="YTFast">
   <meta property="og:title" content="Pricing — YTFast">
-  <meta property="og:description" content="YTFast is free to build yourself. YTFast Pro is $4 once with installers, automatic updates and support. Custom Rust apps for companies are priced by project.">
+  <meta property="og:description" content="Try YTFast free for 14 days. YTFast Pro is US$4, paid once, with updates and priority support.">
   <meta property="og:url" content="https://ytmfast.com/pricing">
   <meta property="og:image" content="https://ytmfast.com/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#131316">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="page">
@@ -30,90 +33,88 @@
       <nav class="nav-links" id="nav-links" aria-label="Main">
         <a href="what-is-ytfast.html">Guide</a>
         <a href="pricing.html" aria-current="page">Pricing</a>
-        <a href="custom-apps.html">Custom apps</a>
         <a href="faq.html">FAQ</a>
         <a href="about.html">About</a>
-        <a href="https://github.com/Likheet/YTFast">GitHub</a>
-        <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
         <a class="btn btn-primary nav-cta" href="download.html">Download</a>
       </nav>
     </div>
   </header>
 
   <main id="content">
-    <section class="prose pricing-head">
-      <h1>Pricing</h1>
-      <p class="lead">YTFast is free if you build and run it yourself. YTFast Pro, the ready-made version, is $4, paid once. Or talk to us about an app built for your company.</p>
+    <section class="container dl-hero">
+      <h1>Try it free. Keep it for $4.</h1>
+      <p class="lead">Every download is the full, latest version of YTFast. Use it free for 14 days, then buy Pro once to keep it. No subscription.</p>
     </section>
 
-    <section class="container">
-      <div class="plans">
-        <div class="plan">
-          <h2>Free</h2>
-          <p class="price">$0</p>
-          <p class="plan-for">Build it and run it yourself.</p>
-          <ul>
-            <li>The full app</li>
-            <li>Source code on GitHub</li>
-            <li>Builds for Windows and Mac from GitHub</li>
-            <li>Help through GitHub issues</li>
-          </ul>
-          <a class="btn btn-alt" href="download.html">Get it free</a>
-        </div>
+    <section class="section">
+      <div class="container">
+        <div class="plans">
+          <div class="plan">
+            <h2>Free trial</h2>
+            <p class="price">$0 <span>for 14 days</span></p>
+            <p class="plan-for">The whole app, to try on your own music.</p>
+            <ul>
+              <li>The latest version, nothing held back</li>
+              <li>Windows and Mac</li>
+              <li>No card or account needed</li>
+              <li>Help by email</li>
+            </ul>
+            <a class="btn btn-alt" href="download.html">Download free</a>
+          </div>
 
-        <div class="plan featured">
-          <h2>Pro <span class="badge">Pre-order</span></h2>
-          <p class="price">$4 <span>once</span></p>
-          <p class="plan-for">The ready-made version.</p>
-          <ul>
-            <li>Ready-made installers for Windows and Mac</li>
-            <li>Automatic updates</li>
-            <li>Priority email support</li>
-            <li>Early access to new features</li>
-          </ul>
-          <a class="btn btn-primary" href="https://www.paypal.com/ncp/payment/6EYYS2JXDCUHE">Pre-order for $4</a>
-          <p class="plan-note">Secure checkout with PayPal, by card or PayPal balance. We email your copy when Pro ships.</p>
-        </div>
+          <div class="plan featured">
+            <h2>Pro</h2>
+            <p class="price">$4 <span>USD, once</span></p>
+            <p class="plan-for">Keep YTFast after the trial.</p>
+            <ul>
+              <li>Yours to keep, no subscription</li>
+              <li>Updates included</li>
+              <li>Priority email support</li>
+              <li>Windows and Mac</li>
+            </ul>
+            <a class="btn btn-primary" href="https://www.paypal.com/ncp/payment/6EYYS2JXDCUHE">Buy Pro for US$4</a>
+            <p class="plan-note">Checkout with PayPal, by card or balance. Pre-ordered at Demo Day? You already have Pro.</p>
+          </div>
 
-        <div class="plan">
-          <h2>Enterprise</h2>
-          <p class="price">Custom</p>
-          <p class="plan-for">A Rust app built for your company.</p>
-          <ul>
-            <li>A desktop app designed around your work</li>
-            <li>Built in Rust for low CPU, memory and power use</li>
-            <li>Windows and Mac</li>
-            <li>Priced by project</li>
-          </ul>
-          <a class="btn btn-alt" href="mailto:hello@ytmfast.com?subject=Custom%20Rust%20app">Contact us</a>
+          <div class="plan">
+            <h2>Custom apps</h2>
+            <p class="price">Quote</p>
+            <p class="plan-for">A Rust desktop app built for your company.</p>
+            <ul>
+              <li>Designed around your team's work</li>
+              <li>Low CPU, memory and power use</li>
+              <li>Windows and Mac</li>
+              <li>Priced by project</li>
+            </ul>
+            <a class="btn btn-alt" href="mailto:hello@ytmfast.com?subject=Custom%20Rust%20app">Email us</a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="prose">
-      <h2 id="custom">Custom Rust apps</h2>
-      <p>YTFast began with a question: how little can a desktop app cost a computer to run? It idles at 0% CPU and uses less than 200 MB of memory. The same approach works for other software, and we build apps like it to order.</p>
-      <p>To get a quote, <a href="mailto:hello@ytmfast.com?subject=Custom%20Rust%20app">email us</a> with:</p>
-      <ul>
-        <li>what the app should do, and who will use it</li>
-        <li>which platforms you need</li>
-        <li>when you need it</li>
-      </ul>
-      <p><a href="custom-apps.html">Read more about custom apps</a>.</p>
-
       <h2 id="questions">Questions</h2>
 
-      <h3>Is the free version limited?</h3>
-      <p>No. It is the full app. Pro adds installers, automatic updates and support, and gets new features first.</p>
+      <h3>How does the trial work?</h3>
+      <p>Download YTFast and use all of it for 14 days. There is nothing to sign up for and no card to enter.</p>
 
-      <h3>Do I still need YouTube Music Premium?</h3>
-      <p>Yes, on every plan. YTFast does not work with free YouTube Music accounts.</p>
-
-      <h3>How do I get Pro?</h3>
-      <p><a href="https://www.paypal.com/ncp/payment/6EYYS2JXDCUHE">Pre-order it for $4</a> through PayPal. We email your copy to your PayPal address when Pro ships.</p>
+      <h3>What happens after 14 days?</h3>
+      <p>To keep using YTFast, <a href="https://www.paypal.com/ncp/payment/6EYYS2JXDCUHE">buy Pro for US$4</a>, paid once through PayPal.</p>
 
       <h3>Is Pro a subscription?</h3>
-      <p>No. It is $4, paid once.</p>
+      <p>No. It is US$4, paid once.</p>
+
+      <h3>I pre-ordered at Demo Day. What do I get?</h3>
+      <p>Pro. You have already paid, so there is nothing more to buy. If you reserved a copy without paying, you can try YTFast free for 14 days like everyone else.</p>
+
+      <h3>Do I still need YouTube Music Premium?</h3>
+      <p>Yes, during the trial and after. YTFast does not work with free YouTube Music accounts.</p>
+
+      <h3>Can I get a refund?</h3>
+      <p>Email <a href="mailto:hello@ytmfast.com">hello@ytmfast.com</a> about any order, including a refund.</p>
+
+      <h3>Need an app like this for your company?</h3>
+      <p>We build desktop apps in Rust that open at once and cost a computer almost nothing to run. <a href="custom-apps.html">Read about custom apps</a>, or <a href="mailto:hello@ytmfast.com?subject=Custom%20Rust%20app">email us</a> with what the app should do, which platforms you need and when.</p>
 
       <p>Read <a href="what-is-ytfast.html#before-you-use-it">what to know before you use YTFast</a>.</p>
     </section>
@@ -124,14 +125,14 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="26" height="26">YTFast</a>
-          <p>Low-power desktop apps in Rust. YTFast, for YouTube Music, is the first.</p>
+          <p>A native desktop app for YouTube Music, on Windows and Mac.</p>
         </div>
         <div>
           <p class="footer-title">Product</p>
           <nav aria-label="Product">
-            <a href="what-is-ytfast.html">Guide</a>
             <a href="download.html">Download</a>
             <a href="pricing.html">Pricing</a>
+            <a href="what-is-ytfast.html">Guide</a>
             <a href="faq.html">FAQ</a>
           </nav>
         </div>
@@ -140,7 +141,6 @@
           <nav aria-label="Company">
             <a href="about.html">About</a>
             <a href="custom-apps.html">Custom apps</a>
-            <a href="https://github.com/Likheet/YTFast">GitHub</a>
             <a href="mailto:hello@ytmfast.com">Contact</a>
           </nav>
         </div>
