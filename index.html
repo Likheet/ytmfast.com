@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>YTMFast — YouTube Music, rebuilt for speed</title>
-  <meta name="description" content="YTMFast is YouTube Music rebuilt as a Windows app that idles at 0% CPU, uses less than 200 MB of memory, and responds instantly.">
+  <title>YTFast — YouTube Music, native and fast</title>
+  <meta name="description" content="YTFast is a desktop app for YouTube Music on Windows and Mac. It idles at 0% CPU, uses less than 200 MB of memory, and starts songs in about a second.">
   <link rel="canonical" href="https://ytmfast.com/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="YTMFast">
-  <meta property="og:title" content="YTMFast — YouTube Music, rebuilt for speed">
-  <meta property="og:description" content="YTMFast is YouTube Music rebuilt as a Windows app that idles at 0% CPU, uses less than 200 MB of memory, and responds instantly.">
+  <meta property="og:site_name" content="YTFast">
+  <meta property="og:title" content="YTFast — YouTube Music, native and fast">
+  <meta property="og:description" content="YTFast is a desktop app for YouTube Music on Windows and Mac. It idles at 0% CPU, uses less than 200 MB of memory, and starts songs in about a second.">
   <meta property="og:url" content="https://ytmfast.com/">
   <meta property="og:image" content="https://ytmfast.com/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -25,15 +25,15 @@
 
   <header class="nav">
     <div class="container">
-      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">YTMFast</a>
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">YTFast</a>
       <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">☰</button>
       <nav class="nav-links" id="nav-links" aria-label="Main">
-        <a href="what-is-ytmfast.html">Guide</a>
+        <a href="what-is-ytfast.html">Guide</a>
         <a href="download.html">Download</a>
         <a href="faq.html">FAQ</a>
         <a href="about.html">About</a>
-        <a href="#" data-site-href="github" data-site-if="github" hidden>GitHub</a>
-        <span class="badge">Download coming soon</span>
+        <a href="https://github.com/Likheet/YTFast">GitHub</a>
+        <span class="badge">Early version</span>
         <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme">◐</button>
       </nav>
     </div>
@@ -43,12 +43,14 @@
     <section class="hero">
       <div class="container">
         <div>
-          <h1><span class="name">YTMFast</span>YouTube Music, rebuilt for speed</h1>
-          <p class="tagline">A Windows app for YouTube Music that idles at 0% CPU, uses less than 200 MB of memory, and responds the instant you click.</p>
+          <h1><span class="name">YTFast</span>YouTube Music, native and fast</h1>
+          <p class="tagline">A desktop app for YouTube Music on Windows and Mac. It idles at 0% CPU, uses less than 200 MB of memory, and starts songs in about a second.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="download.html">Get the download</a>
-            <a class="btn btn-alt" href="what-is-ytmfast.html">What is YTMFast?</a>
+            <a class="btn btn-primary" href="download.html">Download</a>
+            <a class="btn btn-alt" href="what-is-ytfast.html">What is YTFast?</a>
+            <a class="btn btn-alt" href="https://github.com/Likheet/YTFast">GitHub</a>
           </div>
+          <p class="hero-note">For YouTube Music Premium accounts, on Windows and on Macs with Apple Silicon.</p>
         </div>
         <div class="mock-wrap" aria-hidden="true">
           <div class="mock">
@@ -74,7 +76,7 @@
               <div class="track"></div>
             </div>
           </div>
-          <p class="mock-caption">Illustration. Screenshots will be added with the first download.</p>
+          <p class="mock-caption">Illustration of the layout. Screenshots are on the way.</p>
         </div>
       </div>
     </section>
@@ -84,61 +86,80 @@
         <div class="grid">
           <div class="card">
             <div class="icon">⚡</div>
-            <h3>Instant response</h3>
-            <p>Clicks, searches, and skips land at once. There is no heavy web page between you and your music.</p>
+            <h3>Fast</h3>
+            <p>Songs start in about a second. The song under your pointer and the top search result are made ready ahead of time, so they start at once.</p>
           </div>
           <div class="card">
             <div class="icon">💤</div>
-            <h3>0% CPU when idle</h3>
-            <p>When nothing needs doing, YTMFast does nothing. It idles at 0% CPU, so it never competes with your work.</p>
-          </div>
-          <div class="card">
-            <div class="icon">🪶</div>
-            <h3>Under 200 MB of memory</h3>
-            <p>YTMFast uses less than 200 MB of RAM and leaves the rest of your memory for everything else.</p>
-          </div>
-          <div class="card">
-            <div class="icon">🪟</div>
-            <h3>A real Windows app</h3>
-            <p>It runs as its own program with its own window and taskbar icon, not as one more browser tab.</p>
+            <h3>Light</h3>
+            <p>YTFast idles at 0% CPU and uses less than 200 MB of memory. While paused, it uses no CPU at all.</p>
           </div>
           <div class="card">
             <div class="icon">🎵</div>
-            <h3>YouTube Music, rebuilt</h3>
-            <p>The same YouTube Music, rebuilt with one goal: use as little of your computer as possible.</p>
+            <h3>All of YouTube Music, minus video</h3>
+            <p>Home, Explore, Library, search, albums, artists, playlists and moods, on its own screens instead of a web page.</p>
           </div>
           <div class="card">
-            <div class="icon">🔓</div>
-            <h3>Source code to come</h3>
-            <p>The source code will be published, so anyone can see how it works and help improve it.</p>
+            <div class="icon">🎤</div>
+            <h3>Lyrics that follow the song</h3>
+            <p>The line being sung is lit. Click any line to jump there. The player page takes its colours from the song's cover.</p>
+          </div>
+          <div class="card">
+            <div class="icon">📚</div>
+            <h3>Your library</h3>
+            <p>Like songs, save albums and playlists, subscribe to artists, and make, rename and edit your own playlists.</p>
+          </div>
+          <div class="card">
+            <div class="icon">⌨️</div>
+            <h3>Keyboard and media keys</h3>
+            <p>Shortcuts for play, seek, volume and search. Your keyboard's media keys and your computer's own media controls work too.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🔑</div>
+            <h3>Your own sign-in</h3>
+            <p>YTFast uses the YouTube Music sign-in already in your browser. It stays on your computer and is only ever sent to YouTube.</p>
+          </div>
+          <div class="card">
+            <div class="icon">📈</div>
+            <h3>Your mixes keep learning</h3>
+            <p>Plays are reported to YouTube as they are on the website, so History, Home and your mixes stay up to date.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🦀</div>
+            <h3>Source on GitHub</h3>
+            <p>Written in Rust on fastframe, the foundation Spotifast is built on. The code is public for anyone to read.</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="prose">
-      <h2 id="why">Why rebuild it?</h2>
-      <p>YouTube Music on a computer usually means a browser tab, and a browser tab carries the weight of a whole web page even when all it does is play a song. YTMFast is YouTube Music rebuilt as a Windows program that costs your computer almost nothing: 0% CPU when idle, less than 200 MB of memory, and an interface that reacts at once.</p>
-      <p><a href="what-is-ytmfast.html">Read the guide</a></p>
+      <h2 id="why">Why a separate app?</h2>
+      <p>YouTube Music on a computer is a web page, and a web page uses the CPU and memory of a browser even when all it does is play a song. YTFast draws its own screens and plays the audio itself. It aims to open in under a second and to cost your computer almost nothing while it runs.</p>
+      <p><a href="what-is-ytfast.html">Read the guide</a></p>
 
       <h2 id="status">Where things stand</h2>
-      <p>YTMFast runs on Windows today. The download will be posted on the <a href="download.html">download page</a>, and the source code will be published after that.</p>
+      <p>YTFast is at its third version, with builds for Windows and Mac on GitHub. It is early: the newest build renews its sign-in by itself and has a new look, and both are still being tested with real accounts. See the <a href="download.html">download page</a> for how to get it.</p>
+
+      <h2 id="credits">Standing on Spotifast</h2>
+      <p>YTFast builds on <a href="https://github.com/crmne/fastframe">fastframe</a> and learns from <a href="https://github.com/crmne/spotifast">Spotifast</a>, both by Carmine Paolino. If you want the same idea for Spotify, use Spotifast.</p>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
       <nav aria-label="Footer">
-        <a href="what-is-ytmfast.html">Guide</a>
+        <a href="what-is-ytfast.html">Guide</a>
         <a href="download.html">Download</a>
         <a href="faq.html">FAQ</a>
         <a href="about.html">About</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
-        <a href="#" data-site-href="email" data-site-if="email" hidden>Contact</a>
+        <a href="https://github.com/Likheet/YTFast">GitHub</a>
+        <a href="mailto:hello@ytmfast.com">Contact</a>
       </nav>
-      <p>YTMFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube Music is a trademark of Google LLC.</p>
-      <p>© 2026 <span data-site="company">YTMFast</span></p>
+      <p>YTFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube and YouTube Music are trademarks of Google LLC.</p>
+      <p>© 2026 YTFast</p>
     </div>
   </footer>
 

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What is YTFast? — YTFast</title>
+  <meta name="description" content="What YTFast is, what it does, how it works with your YouTube Music account, and what to know before you use it.">
+  <link rel="canonical" href="https://ytmfast.com/what-is-ytfast">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="YTFast">
+  <meta property="og:title" content="What is YTFast? — YTFast">
+  <meta property="og:description" content="What YTFast is, what it does, how it works with your YouTube Music account, and what to know before you use it.">
+  <meta property="og:url" content="https://ytmfast.com/what-is-ytfast">
+  <meta property="og:image" content="https://ytmfast.com/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1b1b1f">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="page">
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">YTFast</a>
+      <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="what-is-ytfast.html" aria-current="page">Guide</a>
+        <a href="download.html">Download</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/Likheet/YTFast">GitHub</a>
+        <span class="badge">Early version</span>
+        <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="prose">
+    <h1>What is YTFast?</h1>
+    <p class="lead">YTFast (YouTube Music Fast) is a desktop app for YouTube Music. It does what the YouTube Music app does, except video, with its own screens instead of a web page.</p>
+
+    <div class="note">
+      <strong>Early version</strong>
+      YTFast is at its third version and is still being tested with real accounts. Expect rough edges, and read <a href="#before-you-use-it">what to know before you use it</a>.
+    </div>
+
+    <h2 id="numbers">The numbers</h2>
+    <table class="table">
+      <thead>
+        <tr><th>Measure</th><th>YTFast</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Time to open</td><td>Under a second is the aim</td></tr>
+        <tr><td>Time for a song to start</td><td>About a second</td></tr>
+        <tr><td>CPU when idle or paused</td><td>0%</td></tr>
+        <tr><td>Memory</td><td>Less than 200 MB</td></tr>
+      </tbody>
+    </table>
+    <p>These are the maker's own figures. Yours will vary with your computer and your connection.</p>
+
+    <h2 id="what-you-get">What you get</h2>
+    <ul>
+      <li><strong>The layout you know.</strong> A bar across the top with search and your account, a menu on the left with Home, Explore, Library and your playlists, and the player bar along the bottom.</li>
+      <li><strong>Pages for everything.</strong> Albums, artists, playlists and moods, with search that suggests as you type.</li>
+      <li><strong>A player page.</strong> The cover on the left over its own colours, with Up next, Lyrics and Related on the right.</li>
+      <li><strong>Lyrics that follow the song.</strong> Click a line to jump to it.</li>
+      <li><strong>Your library.</strong> Like and dislike songs, save albums and playlists, subscribe to artists, and make, rename, edit and delete playlists.</li>
+      <li><strong>A real queue.</strong> Play next, add to queue, reorder Up next, start a radio, shuffle and repeat.</li>
+      <li><strong>Autoplay.</strong> When the queue runs out, songs like the last one follow. You can turn this off.</li>
+    </ul>
+
+    <h2 id="shortcuts">Keyboard shortcuts</h2>
+    <table class="table">
+      <thead>
+        <tr><th>Key</th><th>What it does</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Space</td><td>Pause or play</td></tr>
+        <tr><td>← / →</td><td>Back or forward 10 seconds</td></tr>
+        <tr><td>↑ / ↓</td><td>Volume up or down</td></tr>
+        <tr><td>Shift+N / Shift+P</td><td>Next or previous song</td></tr>
+        <tr><td>M</td><td>Mute</td></tr>
+        <tr><td>L</td><td>Like the song playing</td></tr>
+        <tr><td>/ or Ctrl+F (Cmd+F on a Mac)</td><td>Search</td></tr>
+        <tr><td>Esc</td><td>Close the player page</td></tr>
+        <tr><td>Media keys</td><td>Play, pause, next, previous</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="how-it-works">How it works</h2>
+    <ul>
+      <li><strong>Your sign-in</strong> comes from your web browser. Only YouTube's part is read. It stays on your computer and is only sent to YouTube.</li>
+      <li><strong>Your music</strong> comes from the same internal service that music.youtube.com uses. YouTube Music has no official API.</li>
+      <li><strong>The audio</strong> of each song is found the way the website finds it, with help from <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>, and plays while it downloads.</li>
+      <li><strong>Lyrics</strong> come from YouTube Music, or from <a href="https://lrclib.net">LRCLIB</a>, a free lyrics database, when YouTube Music has none that follow the song.</li>
+      <li><strong>Playback</strong> happens in YTFast itself, through the same audio code as Spotifast. That is why it uses no CPU while paused.</li>
+      <li><strong>Your plays are reported to YouTube</strong>, so History, Home and your mixes keep learning.</li>
+    </ul>
+
+    <h2 id="left-out">Left out on purpose</h2>
+    <p>Videos, offline downloads, casting and the Samples feed.</p>
+
+    <h2 id="before-you-use-it">Before you use it</h2>
+    <ul>
+      <li><strong>You need YouTube Music Premium.</strong> YTFast does not work with free accounts.</li>
+      <li><strong>It is unofficial.</strong> YTFast is not made by Google or YouTube, and using unofficial apps is against YouTube's terms of service.</li>
+      <li><strong>Your account carries some risk.</strong> The makers of yt-dlp warn that an account used with it can be banned, temporarily or permanently. YTFast keeps to a normal listener's pace and never downloads in bulk, but the risk is not zero.</li>
+      <li><strong>YouTube changes.</strong> When YouTube changes how the website works, playback can break until YTFast or yt-dlp catches up.</li>
+    </ul>
+
+    <h2 id="credits">Credits</h2>
+    <p>YTFast builds on <a href="https://github.com/crmne/fastframe">fastframe</a> and learns from <a href="https://github.com/crmne/spotifast">Spotifast</a>, <a href="https://github.com/sigma67/ytmusicapi">ytmusicapi</a>, <a href="https://github.com/sozercan/kaset">Kaset</a> and <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>. Its look is inspired by a theme from <a href="https://betterlyrics.org">Better Lyrics</a>, recreated without its code. Icons are from <a href="https://lucide.dev">Lucide</a>.</p>
+
+    <p><a class="btn btn-primary" href="download.html">Download</a></p>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <nav aria-label="Footer">
+        <a href="what-is-ytfast.html">Guide</a>
+        <a href="download.html">Download</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="https://github.com/Likheet/YTFast">GitHub</a>
+        <a href="mailto:hello@ytmfast.com">Contact</a>
+      </nav>
+      <p>YTFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube and YouTube Music are trademarks of Google LLC.</p>
+      <p>© 2026 YTFast</p>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy — YTMFast</title>
-  <meta name="description" content="What the YTMFast website collects, which is very little, and what to expect from the app's privacy policy.">
+  <title>Privacy — YTFast</title>
+  <meta name="description" content="What the YTFast website collects, and what the YTFast app reads from your browser and sends.">
   <link rel="canonical" href="https://ytmfast.com/privacy">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="YTMFast">
-  <meta property="og:title" content="Privacy — YTMFast">
-  <meta property="og:description" content="What the YTMFast website collects, which is very little, and what to expect from the app's privacy policy.">
+  <meta property="og:site_name" content="YTFast">
+  <meta property="og:title" content="Privacy — YTFast">
+  <meta property="og:description" content="What the YTFast website collects, and what the YTFast app reads from your browser and sends.">
   <meta property="og:url" content="https://ytmfast.com/privacy">
   <meta property="og:image" content="https://ytmfast.com/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -25,15 +25,15 @@
 
   <header class="nav">
     <div class="container">
-      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">YTMFast</a>
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">YTFast</a>
       <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">☰</button>
       <nav class="nav-links" id="nav-links" aria-label="Main">
-        <a href="what-is-ytmfast.html">Guide</a>
+        <a href="what-is-ytfast.html">Guide</a>
         <a href="download.html">Download</a>
         <a href="faq.html">FAQ</a>
         <a href="about.html">About</a>
-        <a href="#" data-site-href="github" data-site-if="github" hidden>GitHub</a>
-        <span class="badge">Download coming soon</span>
+        <a href="https://github.com/Likheet/YTFast">GitHub</a>
+        <span class="badge">Early version</span>
         <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme">◐</button>
       </nav>
     </div>
@@ -41,43 +41,57 @@
 
   <main id="content" class="prose">
     <h1>Privacy</h1>
-    <p class="lead">This page covers the YTMFast website. Last updated: 8 October 2026.</p>
+    <p class="lead">What this website collects, and what the YTFast app reads and sends. Last updated: 8 October 2026.</p>
 
     <h2 id="website">This website</h2>
     <ul>
       <li><strong>No accounts.</strong> You cannot sign up or sign in on this site.</li>
       <li><strong>No analytics or advertising.</strong> The site loads no tracking scripts and sets no cookies.</li>
       <li><strong>One saved preference.</strong> If you switch between the light and dark theme, your choice is saved in your own browser so the site remembers it. It is never sent anywhere.</li>
-      <li><strong>Server logs.</strong> The company that hosts this site may record standard request details, such as your IP address and browser type, to keep the service running and secure.</li>
+      <li><strong>Server logs.</strong> The site is hosted on GitHub Pages. GitHub may record standard request details, such as your IP address and browser type, to keep the service running and secure.</li>
     </ul>
 
     <h2 id="email">If you email us</h2>
     <p>If you write to us, we use your email address and message only to reply to you. We do not add you to a mailing list or share your address with anyone.</p>
 
-    <h2 id="app">The YTMFast app</h2>
-    <p>The app has not been posted for download yet. A privacy policy that describes exactly what the app stores and sends will be published on this page with the download.</p>
+    <h2 id="app">The YTFast app</h2>
+    <p>This section follows the project's own guide. The <a href="https://github.com/Likheet/YTFast">source code</a> is public if you want to check it.</p>
+    <ul>
+      <li><strong>Your browser's sign-in.</strong> YTFast reads only YouTube's sign-in from the browser you choose. Every other site's sign-in data is dropped the moment it is read.</li>
+      <li><strong>Where the sign-in goes.</strong> It stays on your computer and is only ever sent to YouTube.</li>
+      <li><strong>Your plays.</strong> Songs you play are reported to YouTube, as they are on the website, so they appear in your History.</li>
+      <li><strong>Lyrics.</strong> When the Lyrics tab is open and YouTube Music has no lyrics that follow the song, YTFast asks LRCLIB (lrclib.net) about the song playing.</li>
+      <li><strong>Helper programs.</strong> On first run YTFast downloads yt-dlp and Deno and checks both against their published fingerprints.</li>
+    </ul>
+
+    <h3>Files the app keeps</h3>
+    <p>Delete these folders to remove them.</p>
+    <ul>
+      <li>Windows: <code>%LOCALAPPDATA%\YtFast</code></li>
+      <li>Mac: <code>~/Library/Application Support/YtFast</code> and <code>~/Library/Caches/YtFast</code></li>
+    </ul>
 
     <h2 id="changes">Changes</h2>
     <p>If this page changes, the date at the top will change with it.</p>
 
     <h2 id="contact">Contact</h2>
-    <p data-site-if="email" hidden>Questions about privacy can be sent to <a href="#" data-site-href="email" data-site="email"></a>.</p>
-    <p data-site-unless="email">Contact details are on the <a href="about.html#contact">About page</a>.</p>
+    <p>Questions about privacy can be sent to <a href="mailto:hello@ytmfast.com">hello@ytmfast.com</a>.</p>
   </main>
 
   <footer class="footer">
     <div class="container">
       <nav aria-label="Footer">
-        <a href="what-is-ytmfast.html">Guide</a>
+        <a href="what-is-ytfast.html">Guide</a>
         <a href="download.html">Download</a>
         <a href="faq.html">FAQ</a>
         <a href="about.html">About</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
-        <a href="#" data-site-href="email" data-site-if="email" hidden>Contact</a>
+        <a href="https://github.com/Likheet/YTFast">GitHub</a>
+        <a href="mailto:hello@ytmfast.com">Contact</a>
       </nav>
-      <p>YTMFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube Music is a trademark of Google LLC.</p>
-      <p>© 2026 <span data-site="company">YTMFast</span></p>
+      <p>YTFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube and YouTube Music are trademarks of Google LLC.</p>
+      <p>© 2026 YTFast</p>
     </div>
   </footer>
 

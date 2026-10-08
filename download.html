@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Download — YTMFast</title>
-  <meta name="description" content="The YTMFast download for Windows will be posted on this page. See how to be told when it is up.">
+  <title>Download — YTFast</title>
+  <meta name="description" content="Get YTFast for Windows or Mac from GitHub, with what you need and what happens on the first run.">
   <link rel="canonical" href="https://ytmfast.com/download">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="YTMFast">
-  <meta property="og:title" content="Download — YTMFast">
-  <meta property="og:description" content="The YTMFast download for Windows will be posted on this page. See how to be told when it is up.">
+  <meta property="og:site_name" content="YTFast">
+  <meta property="og:title" content="Download — YTFast">
+  <meta property="og:description" content="Get YTFast for Windows or Mac from GitHub, with what you need and what happens on the first run.">
   <meta property="og:url" content="https://ytmfast.com/download">
   <meta property="og:image" content="https://ytmfast.com/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -25,15 +25,15 @@
 
   <header class="nav">
     <div class="container">
-      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">YTMFast</a>
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">YTFast</a>
       <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">☰</button>
       <nav class="nav-links" id="nav-links" aria-label="Main">
-        <a href="what-is-ytmfast.html">Guide</a>
+        <a href="what-is-ytfast.html">Guide</a>
         <a href="download.html" aria-current="page">Download</a>
         <a href="faq.html">FAQ</a>
         <a href="about.html">About</a>
-        <a href="#" data-site-href="github" data-site-if="github" hidden>GitHub</a>
-        <span class="badge">Download coming soon</span>
+        <a href="https://github.com/Likheet/YTFast">GitHub</a>
+        <span class="badge">Early version</span>
         <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme">◐</button>
       </nav>
     </div>
@@ -41,44 +41,63 @@
 
   <main id="content" class="prose">
     <h1>Download</h1>
-    <p class="lead">The YTMFast download for Windows is not posted yet. It will appear on this page.</p>
+    <p class="lead">YTFast runs on Windows and on Macs with Apple Silicon. Builds are published on GitHub.</p>
+
+    <div class="note">
+      <strong>No installer yet</strong>
+      For now you download a zip from the project's newest build on GitHub, which needs a free GitHub account. The step-by-step guide walks you through it.
+    </div>
+
+    <p><a class="btn btn-primary" href="https://github.com/Likheet/YTFast/blob/main/docs/run-the-app.md">Open the step-by-step guide</a></p>
 
     <h2 id="platforms">Platforms</h2>
     <table class="table">
       <thead>
-        <tr><th>Platform</th><th>Download</th></tr>
+        <tr><th>Platform</th><th>Build</th><th>Browser to sign in with</th></tr>
       </thead>
       <tbody>
-        <tr><td>Windows</td><td>Coming soon</td></tr>
+        <tr><td>Windows</td><td>YTFast-for-Windows</td><td>Firefox</td></tr>
+        <tr><td>Mac with Apple Silicon</td><td>YTFast-for-Mac</td><td>Chrome, Firefox, Edge, Brave or Safari</td></tr>
       </tbody>
     </table>
-
-    <h2 id="notify">Be told when it is up</h2>
-    <p data-site-if="email" hidden>Email <a href="#" data-site-href="email" data-site="email"></a> and we will write to you once, when the download is posted.</p>
-    <p data-site-unless="email">Check back here for the download.</p>
+    <p>On Windows, Chrome, Edge and Brave lock their sign-in data so that other programs cannot read it. That is why YTFast needs Firefox there.</p>
 
     <h2 id="what-you-will-need">What you will need</h2>
     <ul>
-      <li>A PC running Windows.</li>
+      <li>A YouTube Music <strong>Premium</strong> account.</li>
+      <li>A browser signed in to music.youtube.com with that account.</li>
+      <li>About 250 MB of disk space. On first run YTFast downloads two helper programs, yt-dlp and Deno.</li>
       <li>An internet connection.</li>
     </ul>
 
-    <p><a href="what-is-ytmfast.html">Read what YTMFast is</a></p>
+    <h2 id="first-run">The first run</h2>
+    <ol class="steps">
+      <li><strong>Sign in to music.youtube.com</strong>Do this in your browser first. YTFast uses that sign-in.</li>
+      <li><strong>Open YTFast</strong>Windows and macOS warn you the first time, because YTFast is not signed with a paid certificate. The guide shows how to continue.</li>
+      <li><strong>Choose your browser</strong>YTFast reads YouTube's sign-in from it, then fetches its helper programs. This takes a minute or two and happens once.</li>
+      <li><strong>Play</strong>After that, songs start in about a second.</li>
+    </ol>
+
+    <h2 id="source">Build it yourself</h2>
+    <p>YTFast is written in Rust. Clone <a href="https://github.com/Likheet/YTFast">the repository</a> and run <code>cargo run -p ytfast</code>. To look around without an account, run <code>cargo run -p ytfast -- --demo</code>.</p>
+
+    <p>Read <a href="what-is-ytfast.html#before-you-use-it">what to know before you use it</a>.</p>
   </main>
 
   <footer class="footer">
     <div class="container">
       <nav aria-label="Footer">
-        <a href="what-is-ytmfast.html">Guide</a>
+        <a href="what-is-ytfast.html">Guide</a>
         <a href="download.html">Download</a>
         <a href="faq.html">FAQ</a>
         <a href="about.html">About</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
-        <a href="#" data-site-href="email" data-site-if="email" hidden>Contact</a>
+        <a href="https://github.com/Likheet/YTFast">GitHub</a>
+        <a href="mailto:hello@ytmfast.com">Contact</a>
       </nav>
-      <p>YTMFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube Music is a trademark of Google LLC.</p>
-      <p>© 2026 <span data-site="company">YTMFast</span></p>
+      <p>YTFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube and YouTube Music are trademarks of Google LLC.</p>
+      <p>© 2026 YTFast</p>
     </div>
   </footer>
 

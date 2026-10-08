@@ -1,7 +1,7 @@
 {
-  "name": "YTMFast",
-  "short_name": "YTMFast",
-  "description": "YouTube Music, rebuilt as a Windows app that uses almost nothing.",
+  "name": "YTFast",
+  "short_name": "YTFast",
+  "description": "YouTube Music, native and fast. A desktop app for Windows and Mac.",
   "start_url": "/",
   "display": "browser",
   "background_color": "#1b1b1f",

@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FAQ — YTMFast</title>
-  <meta name="description" content="Common questions about YTMFast: the download, Windows support, how light it is, and how it differs from YouTube Music in a browser.">
+  <title>FAQ — YTFast</title>
+  <meta name="description" content="Common questions about YTFast: platforms, YouTube Music Premium, performance, features, and account safety.">
   <link rel="canonical" href="https://ytmfast.com/faq">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="YTMFast">
-  <meta property="og:title" content="FAQ — YTMFast">
-  <meta property="og:description" content="Common questions about YTMFast: the download, Windows support, how light it is, and how it differs from YouTube Music in a browser.">
+  <meta property="og:site_name" content="YTFast">
+  <meta property="og:title" content="FAQ — YTFast">
+  <meta property="og:description" content="Common questions about YTFast: platforms, YouTube Music Premium, performance, features, and account safety.">
   <meta property="og:url" content="https://ytmfast.com/faq">
   <meta property="og:image" content="https://ytmfast.com/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -25,15 +25,15 @@
 
   <header class="nav">
     <div class="container">
-      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">YTMFast</a>
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">YTFast</a>
       <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">☰</button>
       <nav class="nav-links" id="nav-links" aria-label="Main">
-        <a href="what-is-ytmfast.html">Guide</a>
+        <a href="what-is-ytfast.html">Guide</a>
         <a href="download.html">Download</a>
         <a href="faq.html" aria-current="page">FAQ</a>
         <a href="about.html">About</a>
-        <a href="#" data-site-href="github" data-site-if="github" hidden>GitHub</a>
-        <span class="badge">Download coming soon</span>
+        <a href="https://github.com/Likheet/YTFast">GitHub</a>
+        <span class="badge">Early version</span>
         <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme">◐</button>
       </nav>
     </div>
@@ -41,56 +41,82 @@
 
   <main id="content" class="prose">
     <h1>Frequently asked questions</h1>
-    <p class="lead">Short answers about what YTMFast is, how light it is, and when you can get it.</p>
+    <p class="lead">Short answers about what YTFast is, what it needs, and what to know before you use it.</p>
 
-    <h2 id="availability">Availability</h2>
+    <h2 id="getting-it">Getting it</h2>
 
-    <h3>Can I download YTMFast now?</h3>
-    <p>Not yet. YTMFast runs on Windows today, and the download will be posted on the <a href="download.html">download page</a>.</p>
+    <h3>Can I download YTFast now?</h3>
+    <p>Yes. Builds for Windows and Mac are on GitHub. There is no installer yet, so follow the <a href="https://github.com/Likheet/YTFast/blob/main/docs/run-the-app.md">step-by-step guide</a>.</p>
 
     <h3>Which platforms does it run on?</h3>
-    <p>Windows. No other platforms have been announced.</p>
+    <p>Windows, and Macs with Apple Silicon.</p>
 
-    <h3>Is YTMFast open source?</h3>
-    <p>Not yet. The source code will be published after the download is posted.</p>
+    <h3>Do I need YouTube Music Premium?</h3>
+    <p>Yes. YTFast is for Premium accounts and does not work with free ones.</p>
+
+    <h3>Is the source code public?</h3>
+    <p>Yes. It is on <a href="https://github.com/Likheet/YTFast">GitHub</a>, written in Rust.</p>
+
+    <h3>Why does Windows need Firefox?</h3>
+    <p>YTFast uses the YouTube Music sign-in from your browser. On Windows, Chrome, Edge and Brave lock that data so other programs cannot read it, and Firefox does not.</p>
 
     <h2 id="performance">Performance</h2>
 
     <h3>How light is it?</h3>
-    <p>YTMFast idles at 0% CPU and uses less than 200 MB of memory. These are the maker's own figures, and yours will vary with your PC and what is playing.</p>
+    <p>YTFast idles at 0% CPU and uses less than 200 MB of memory. These are the maker's own figures, and yours will vary with your computer.</p>
+
+    <h3>How fast is it?</h3>
+    <p>It aims to open in under a second. Songs start in about a second, and a song you rest the pointer on is made ready ahead of time.</p>
 
     <h3>How is it different from YouTube Music in a browser?</h3>
-    <p>A browser tab carries a whole web page even when it is only playing a song. YTMFast is a separate Windows program with its own window and taskbar icon, rebuilt to use far less CPU and memory and to respond at once.</p>
+    <p>The website is a web page running in a browser. YTFast draws its own screens and plays the audio itself, so it uses far less CPU and memory and uses no CPU while paused.</p>
 
-    <h3>Why does a music player need to be light?</h3>
-    <p>Because it is open all day. Whatever a player uses, it takes from the games, calls, and work running beside it, and on a laptop it takes from the battery too.</p>
+    <h2 id="features">Features</h2>
 
-    <h2 id="youtube-music">YouTube Music</h2>
+    <h3>Does it play videos?</h3>
+    <p>No. YTFast plays songs only.</p>
 
-    <h3>Is YTMFast an official YouTube Music app?</h3>
-    <p>No. YTMFast is an independent project. It is not made, sponsored, or endorsed by Google or YouTube.</p>
+    <h3>Can I download songs for offline listening?</h3>
+    <p>No. Offline downloads and casting are left out on purpose.</p>
 
-    <h3>What does YTMFast do with my data?</h3>
-    <p>See the <a href="privacy.html">privacy page</a>. A full privacy policy for the app will be published with the download.</p>
+    <h3>Will my history and recommendations still work?</h3>
+    <p>Yes. YTFast reports your plays to YouTube as the website does, so History, Home and your mixes keep learning.</p>
+
+    <h3>Where do the lyrics come from?</h3>
+    <p>From YouTube Music, or from LRCLIB, a free lyrics database, when YouTube Music has none that follow the song.</p>
+
+    <h2 id="safety">Safety and YouTube</h2>
+
+    <h3>Is YTFast an official YouTube Music app?</h3>
+    <p>No. YTFast is an independent project. It is not made, sponsored, or endorsed by Google or YouTube.</p>
+
+    <h3>Is it allowed by YouTube?</h3>
+    <p>No. Using unofficial apps is against YouTube's terms of service, with or without Premium.</p>
+
+    <h3>Can my account be banned?</h3>
+    <p>It is possible. YTFast sometimes finds songs through yt-dlp, and yt-dlp's makers warn that an account used with it can be banned, temporarily or permanently. YTFast only asks for what a listener would, one song at a time, and never downloads in bulk, but the risk is not zero.</p>
+
+    <h3>What does YTFast read from my browser?</h3>
+    <p>Only YouTube's sign-in. Every other site's data is dropped the moment it is read, and the sign-in is only ever sent to YouTube. See the <a href="privacy.html">privacy page</a>.</p>
 
     <h2 id="more">Something else?</h2>
-    <p data-site-if="email" hidden>Email <a href="#" data-site-href="email" data-site="email"></a> and we will answer.</p>
-    <p data-site-unless="email">Contact details are on the <a href="about.html#contact">About page</a>.</p>
+    <p>Email <a href="mailto:hello@ytmfast.com">hello@ytmfast.com</a>, or open an issue on <a href="https://github.com/Likheet/YTFast">GitHub</a>.</p>
   </main>
 
   <footer class="footer">
     <div class="container">
       <nav aria-label="Footer">
-        <a href="what-is-ytmfast.html">Guide</a>
+        <a href="what-is-ytfast.html">Guide</a>
         <a href="download.html">Download</a>
         <a href="faq.html">FAQ</a>
         <a href="about.html">About</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
-        <a href="#" data-site-href="email" data-site-if="email" hidden>Contact</a>
+        <a href="https://github.com/Likheet/YTFast">GitHub</a>
+        <a href="mailto:hello@ytmfast.com">Contact</a>
       </nav>
-      <p>YTMFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube Music is a trademark of Google LLC.</p>
-      <p>© 2026 <span data-site="company">YTMFast</span></p>
+      <p>YTFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube and YouTube Music are trademarks of Google LLC.</p>
+      <p>© 2026 YTFast</p>
     </div>
   </footer>
 
