@@ -712,6 +712,7 @@ kbd {
 .plans.two {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   max-width: 880px;
+  margin: 0 auto;
 }
 
 .plan {
@@ -808,6 +809,7 @@ kbd {
 
 .plans-foot {
   margin: 8px 0 0;
+  text-align: center;
   color: var(--text-2);
 }
 
