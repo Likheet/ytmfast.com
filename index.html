@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://ytmfast.com/">
   <meta property="og:image" content="https://ytmfast.com/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#1b1b1f">
+  <meta name="theme-color" content="#131316">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -25,17 +25,17 @@
 
   <header class="nav">
     <div class="container">
-      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">YTFast</a>
-      <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="26" height="26">YTFast</a>
+      <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg></button>
       <nav class="nav-links" id="nav-links" aria-label="Main">
         <a href="what-is-ytfast.html">Guide</a>
-        <a href="download.html">Download</a>
         <a href="pricing.html">Pricing</a>
+        <a href="custom-apps.html">Custom apps</a>
         <a href="faq.html">FAQ</a>
         <a href="about.html">About</a>
         <a href="https://github.com/Likheet/YTFast">GitHub</a>
-        <span class="badge">Early version</span>
-        <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme">◐</button>
+        <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+        <a class="btn btn-primary nav-cta" href="download.html">Download</a>
       </nav>
     </div>
   </header>
@@ -44,89 +44,137 @@
     <section class="hero">
       <div class="container">
         <div>
+          <a class="eyebrow" href="custom-apps.html"><b>Our first app</b>We build low-power desktop apps in Rust<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
           <h1><span class="name">YTFast</span>YouTube Music, native and fast</h1>
           <p class="tagline">A desktop app for YouTube Music on Windows and Mac. It idles at 0% CPU, uses less than 200 MB of memory, and starts songs in about a second.</p>
           <div class="actions">
             <a class="btn btn-primary" href="download.html">Download</a>
             <a class="btn btn-alt" href="what-is-ytfast.html">What is YTFast?</a>
-            <a class="btn btn-alt" href="https://github.com/Likheet/YTFast">GitHub</a>
           </div>
           <p class="hero-note">For YouTube Music Premium accounts, on Windows and on Macs with Apple Silicon.</p>
         </div>
-        <div class="mock-wrap" aria-hidden="true">
-          <div class="mock">
-            <div class="mock-bar"><span></span><span></span><span></span></div>
-            <div class="mock-body">
-              <div class="mock-side">
-                <div class="sk on" style="width:70%"></div>
-                <div class="sk" style="width:85%"></div>
-                <div class="sk" style="width:60%"></div>
-                <div class="sk" style="width:75%"></div>
-                <div class="sk" style="width:50%"></div>
+        <div class="app-wrap" aria-hidden="true">
+          <div class="app">
+            <div class="app-top">
+              <span class="app-dots"><i></i><i></i><i></i></span>
+              <span class="app-search"><svg class="i" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>Search</span>
+              <span class="app-avatar"></span>
+            </div>
+            <div class="app-body">
+              <div class="app-side">
+                <span class="app-nav on"><svg class="i" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>Home</span>
+                <span class="app-nav"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36z"/></svg>Explore</span>
+                <span class="app-nav"><svg class="i" viewBox="0 0 24 24"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></svg>Library</span>
+                <span class="app-rule"></span>
+                <span class="sk" style="width:78%"></span>
+                <span class="sk" style="width:58%"></span>
+                <span class="sk" style="width:70%"></span>
+                <span class="sk" style="width:46%"></span>
               </div>
-              <div class="mock-main">
-                <div class="sk" style="width:35%"></div>
-                <div class="mock-tiles"><i></i><i></i><i></i><i></i></div>
-                <div class="mock-row"><i></i><div class="sk" style="width:70%"></div><div class="sk"></div></div>
-                <div class="mock-row"><i></i><div class="sk" style="width:55%"></div><div class="sk"></div></div>
-                <div class="mock-row"><i></i><div class="sk" style="width:80%"></div><div class="sk"></div></div>
+              <div class="app-main">
+                <div class="app-now">
+                  <span class="app-cover"><svg class="i" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+                  <span class="sk sk-lg" style="width:72%"></span>
+                  <span class="sk" style="width:46%"></span>
+                </div>
+                <div>
+                  <div class="app-tabs"><span>Up next</span><span class="on">Lyrics</span><span>Related</span></div>
+                  <div class="app-lyrics">
+                    <span class="ly" style="width:64%"></span>
+                    <span class="ly" style="width:82%"></span>
+                    <span class="ly on" style="width:74%"></span>
+                    <span class="ly" style="width:56%"></span>
+                    <span class="ly" style="width:86%"></span>
+                    <span class="ly" style="width:48%"></span>
+                    <span class="ly" style="width:68%"></span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="mock-player">
-              <div class="art"></div>
-              <div class="track"></div>
+            <div class="app-player">
+              <span class="app-ctl">
+                <svg class="i" viewBox="0 0 24 24"><path d="M19 20 9 12l10-8z"/><path d="M5 19V5"/></svg>
+                <span class="app-play"><svg class="i" viewBox="0 0 24 24"><path d="M6 3l14 9-14 9z"/></svg></span>
+                <svg class="i" viewBox="0 0 24 24"><path d="m5 4 10 8-10 8z"/><path d="M19 5v14"/></svg>
+              </span>
+              <span class="app-track"></span>
+              <span class="app-vol"></span>
             </div>
           </div>
-          <p class="mock-caption">Illustration of the layout. Screenshots are on the way.</p>
         </div>
       </div>
     </section>
 
-    <section class="features">
+    <section class="stats" aria-label="The numbers">
       <div class="container">
+        <div class="stat-row">
+          <div class="stat">
+            <p class="stat-value">0<span>%</span></p>
+            <p class="stat-label">CPU when idle or paused</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value">&lt;200<span>MB</span></p>
+            <p class="stat-label">Memory in use</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value">~1<span>second</span></p>
+            <p class="stat-label">For a song to start</p>
+          </div>
+        </div>
+        <p class="stats-note">Our own figures. Yours will vary with your computer and your connection.</p>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">What you get</p>
+          <h2>All of YouTube Music, minus video</h2>
+          <p>Your library, your mixes and your lyrics, on screens drawn by the app itself instead of a web page.</p>
+        </div>
         <div class="grid">
           <div class="card">
-            <div class="icon">⚡</div>
+            <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></div>
             <h3>Fast</h3>
             <p>Songs start in about a second. The song under your pointer and the top search result are made ready ahead of time, so they start at once.</p>
           </div>
           <div class="card">
-            <div class="icon">💤</div>
+            <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></div>
             <h3>Light</h3>
             <p>YTFast idles at 0% CPU and uses less than 200 MB of memory. While paused, it uses no CPU at all.</p>
           </div>
           <div class="card">
-            <div class="icon">🎵</div>
-            <h3>All of YouTube Music, minus video</h3>
-            <p>Home, Explore, Library, search, albums, artists, playlists and moods, on its own screens instead of a web page.</p>
+            <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+            <h3>Every screen you know</h3>
+            <p>Home, Explore, Library, search, albums, artists, playlists and moods, each on its own screen.</p>
           </div>
           <div class="card">
-            <div class="icon">🎤</div>
+            <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg></div>
             <h3>Lyrics that follow the song</h3>
             <p>The line being sung is lit. Click any line to jump there. The player page takes its colours from the song's cover.</p>
           </div>
           <div class="card">
-            <div class="icon">📚</div>
+            <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></svg></div>
             <h3>Your library</h3>
             <p>Like songs, save albums and playlists, subscribe to artists, and make, rename and edit your own playlists.</p>
           </div>
           <div class="card">
-            <div class="icon">⌨️</div>
+            <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01"/><path d="M10 8h.01"/><path d="M14 8h.01"/><path d="M18 8h.01"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/><path d="M7 16h10"/></svg></div>
             <h3>Keyboard and media keys</h3>
             <p>Shortcuts for play, seek, volume and search. Your keyboard's media keys and your computer's own media controls work too.</p>
           </div>
           <div class="card">
-            <div class="icon">🔑</div>
+            <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
             <h3>Your own sign-in</h3>
             <p>YTFast uses the YouTube Music sign-in already in your browser. It stays on your computer and is only ever sent to YouTube.</p>
           </div>
           <div class="card">
-            <div class="icon">📈</div>
+            <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg></div>
             <h3>Your mixes keep learning</h3>
             <p>Plays are reported to YouTube as they are on the website, so History, Home and your mixes stay up to date.</p>
           </div>
           <div class="card">
-            <div class="icon">🦀</div>
+            <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></div>
             <h3>Source on GitHub</h3>
             <p>Written in Rust on fastframe, the foundation Spotifast is built on. The code is public for anyone to read.</p>
           </div>
@@ -134,42 +182,134 @@
       </div>
     </section>
 
-    <section class="prose">
-      <h2 id="why">Why a separate app?</h2>
-      <p>YouTube Music on a computer is a web page, and a web page uses the CPU and memory of a browser even when all it does is play a song. YTFast draws its own screens and plays the audio itself. It aims to open in under a second and to cost your computer almost nothing while it runs.</p>
-      <p><a href="what-is-ytfast.html">Read the guide</a></p>
+    <section class="section" id="why">
+      <div class="container split">
+        <div>
+          <p class="kicker">Why a separate app</p>
+          <h2>A music player should not need a browser</h2>
+          <p>YouTube Music on a computer is a web page, and a web page uses the CPU and memory of a browser even when all it does is play a song.</p>
+          <p>YTFast draws its own screens and plays the audio itself. It aims to open in under a second and to cost your computer almost nothing while it runs.</p>
+          <a class="link-arrow" href="what-is-ytfast.html">Read the guide<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </div>
+        <div class="compare">
+          <div class="compare-item">
+            <h3>YouTube Music in a browser</h3>
+            <ul>
+              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg>A web page running in a browser</li>
+              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg>Uses a browser's CPU and memory, even when all it does is play a song</li>
+            </ul>
+          </div>
+          <div class="compare-item is-us">
+            <h3>YTFast</h3>
+            <ul>
+              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Draws its own screens and plays the audio itself</li>
+              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>0% CPU when idle or paused</li>
+              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Less than 200 MB of memory</li>
+              <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Songs start in about a second</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h2 id="status">Where things stand</h2>
-      <p>YTFast is at its third version, with builds for Windows and Mac on GitHub. It is early: the newest build renews its sign-in by itself and has a new look, and both are still being tested with real accounts. See the <a href="download.html">download page</a> for how to get it.</p>
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Pricing</p>
+          <h2>Free to build, $4 ready-made</h2>
+          <p>The full app is free. Pro adds installers, automatic updates and support for a single payment.</p>
+        </div>
+        <div class="plans">
+          <div class="plan">
+            <h3>Free</h3>
+            <p class="price">$0</p>
+            <p class="plan-for">The full app, as a zip or built from source.</p>
+            <a class="btn btn-alt" href="download.html">Download</a>
+          </div>
+          <div class="plan featured">
+            <h3>Pro <span class="badge">Pre-order</span></h3>
+            <p class="price">$4 <span>once</span></p>
+            <p class="plan-for">Installers, automatic updates and priority support.</p>
+            <a class="btn btn-primary" href="pricing.html">See pricing</a>
+          </div>
+          <div class="plan">
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <p class="plan-for">A Rust app built for your company.</p>
+            <a class="btn btn-alt" href="custom-apps.html">Custom apps</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h2 id="pricing">Free to build, $29 ready-made</h2>
-      <p>YTFast is free if you build and run it yourself from GitHub. YTFast Pro costs $29 once and adds ready-made installers, automatic updates, priority email support, and early access to new features.</p>
-      <p><a href="pricing.html">See pricing</a></p>
+    <section class="section" id="custom">
+      <div class="container">
+        <div class="cta-card">
+          <div>
+            <p class="kicker">Custom apps</p>
+            <h2>Need an app like this?</h2>
+            <p>YTFast is also our showcase. We build desktop apps in Rust that open at once, idle at 0% CPU, and stay small in memory, and we can build one around what your team needs.</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="custom-apps.html">See custom apps</a>
+            <a class="btn btn-alt" href="mailto:hello@ytmfast.com?subject=Custom%20Rust%20app">Email us</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h2 id="custom">Need an app like this?</h2>
-      <p>YTFast is also a demonstration. We build desktop apps in Rust that open at once, idle at 0% CPU, and stay small in memory, and we can build one around what your team needs.</p>
-      <p><a class="btn btn-primary" href="mailto:hello@ytmfast.com?subject=Custom%20Rust%20app">Contact us</a></p>
-
-      <h2 id="credits">Standing on Spotifast</h2>
-      <p>YTFast builds on <a href="https://github.com/crmne/fastframe">fastframe</a> and learns from <a href="https://github.com/crmne/spotifast">Spotifast</a>, both by Carmine Paolino. If you want the same idea for Spotify, use Spotifast.</p>
+    <section class="section">
+      <div class="container duo">
+        <div class="panel" id="status">
+          <h2>Where things stand</h2>
+          <p>YTFast is at its third version, with builds for Windows and Mac on GitHub. The newest build renews its sign-in by itself and has a new look.</p>
+          <p><a href="download.html">How to get it</a></p>
+        </div>
+        <div class="panel" id="credits">
+          <h2>Standing on Spotifast</h2>
+          <p>YTFast builds on <a href="https://github.com/crmne/fastframe">fastframe</a> and learns from <a href="https://github.com/crmne/spotifast">Spotifast</a>, both by Carmine Paolino. If you want the same idea for Spotify, use Spotifast.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <nav aria-label="Footer">
-        <a href="what-is-ytfast.html">Guide</a>
-        <a href="download.html">Download</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="https://github.com/Likheet/YTFast">GitHub</a>
-        <a href="mailto:hello@ytmfast.com">Contact</a>
-      </nav>
-      <p>YTFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube and YouTube Music are trademarks of Google LLC.</p>
-      <p>© 2026 YTFast</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="26" height="26">YTFast</a>
+          <p>Low-power desktop apps in Rust. YTFast, for YouTube Music, is the first.</p>
+        </div>
+        <div>
+          <p class="footer-title">Product</p>
+          <nav aria-label="Product">
+            <a href="what-is-ytfast.html">Guide</a>
+            <a href="download.html">Download</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-title">Company</p>
+          <nav aria-label="Company">
+            <a href="about.html">About</a>
+            <a href="custom-apps.html">Custom apps</a>
+            <a href="https://github.com/Likheet/YTFast">GitHub</a>
+            <a href="mailto:hello@ytmfast.com">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-title">Legal</p>
+          <nav aria-label="Legal">
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>YTFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube and YouTube Music are trademarks of Google LLC.</p>
+        <p>© 2026 YTFast</p>
+      </div>
     </div>
   </footer>
 

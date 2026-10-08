@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://ytmfast.com/faq">
   <meta property="og:image" content="https://ytmfast.com/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#1b1b1f">
+  <meta name="theme-color" content="#131316">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -25,17 +25,17 @@
 
   <header class="nav">
     <div class="container">
-      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">YTFast</a>
-      <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="26" height="26">YTFast</a>
+      <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg></button>
       <nav class="nav-links" id="nav-links" aria-label="Main">
         <a href="what-is-ytfast.html">Guide</a>
-        <a href="download.html">Download</a>
         <a href="pricing.html">Pricing</a>
+        <a href="custom-apps.html">Custom apps</a>
         <a href="faq.html" aria-current="page">FAQ</a>
         <a href="about.html">About</a>
         <a href="https://github.com/Likheet/YTFast">GitHub</a>
-        <span class="badge">Early version</span>
-        <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme">◐</button>
+        <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+        <a class="btn btn-primary nav-cta" href="download.html">Download</a>
       </nav>
     </div>
   </header>
@@ -47,19 +47,19 @@
     <h2 id="getting-it">Getting it</h2>
 
     <h3>Can I download YTFast now?</h3>
-    <p>Yes. Builds for Windows and Mac are on GitHub. There is no installer yet, so follow the <a href="https://github.com/Likheet/YTFast/blob/main/docs/run-the-app.md">step-by-step guide</a>.</p>
+    <p>Yes. Builds for Windows and Mac are on GitHub. They come as a zip, and the <a href="https://github.com/Likheet/YTFast/blob/main/docs/run-the-app.md">step-by-step guide</a> shows where to get yours and covers the first run.</p>
 
     <h3>Which platforms does it run on?</h3>
     <p>Windows, and Macs with Apple Silicon.</p>
 
     <h3>Is YTFast free?</h3>
-    <p>Yes, if you build and run it yourself from GitHub. YTFast Pro costs $29 once and adds ready-made installers, automatic updates, priority email support, and early access to new features. See <a href="pricing.html">pricing</a>.</p>
+    <p>Yes, if you build and run it yourself from GitHub. YTFast Pro is $4 once for ready-made installers, automatic updates, priority email support, and early access to new features, and is open for pre-order. See <a href="pricing.html">pricing</a>.</p>
 
     <h3>Do I need YouTube Music Premium?</h3>
     <p>Yes. YTFast is for Premium accounts and does not work with free ones, whichever plan you choose.</p>
 
     <h3>Can you build a custom app for my company?</h3>
-    <p>Yes. We build low-power desktop apps in Rust to order. <a href="mailto:hello@ytmfast.com?subject=Custom%20Rust%20app">Email us</a> with what you need.</p>
+    <p>Yes. We build low-power desktop apps in Rust to order. See <a href="custom-apps.html">custom apps</a>, or <a href="mailto:hello@ytmfast.com?subject=Custom%20Rust%20app">email us</a> with what you need.</p>
 
     <h3>Is the source code public?</h3>
     <p>Yes. It is on <a href="https://github.com/Likheet/YTFast">GitHub</a>, written in Rust.</p>
@@ -70,7 +70,7 @@
     <h2 id="performance">Performance</h2>
 
     <h3>How light is it?</h3>
-    <p>YTFast idles at 0% CPU and uses less than 200 MB of memory. These are the maker's own figures, and yours will vary with your computer.</p>
+    <p>YTFast idles at 0% CPU and uses less than 200 MB of memory. These are our own figures, and yours will vary with your computer.</p>
 
     <h3>How fast is it?</h3>
     <p>It aims to open in under a second. Songs start in about a second, and a song you rest the pointer on is made ready ahead of time.</p>
@@ -92,16 +92,10 @@
     <h3>Where do the lyrics come from?</h3>
     <p>From YouTube Music, or from LRCLIB, a free lyrics database, when YouTube Music has none that follow the song.</p>
 
-    <h2 id="safety">Safety and YouTube</h2>
+    <h2 id="privacy">YouTube and your data</h2>
 
     <h3>Is YTFast an official YouTube Music app?</h3>
     <p>No. YTFast is an independent project. It is not made, sponsored, or endorsed by Google or YouTube.</p>
-
-    <h3>Is it allowed by YouTube?</h3>
-    <p>No. Using unofficial apps is against YouTube's terms of service, with or without Premium.</p>
-
-    <h3>Can my account be banned?</h3>
-    <p>It is possible. YTFast sometimes finds songs through yt-dlp, and yt-dlp's makers warn that an account used with it can be banned, temporarily or permanently. YTFast only asks for what a listener would, one song at a time, and never downloads in bulk, but the risk is not zero.</p>
 
     <h3>What does YTFast read from my browser?</h3>
     <p>Only YouTube's sign-in. Every other site's data is dropped the moment it is read, and the sign-in is only ever sent to YouTube. See the <a href="privacy.html">privacy page</a>.</p>
@@ -112,19 +106,41 @@
 
   <footer class="footer">
     <div class="container">
-      <nav aria-label="Footer">
-        <a href="what-is-ytfast.html">Guide</a>
-        <a href="download.html">Download</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="https://github.com/Likheet/YTFast">GitHub</a>
-        <a href="mailto:hello@ytmfast.com">Contact</a>
-      </nav>
-      <p>YTFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube and YouTube Music are trademarks of Google LLC.</p>
-      <p>© 2026 YTFast</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="26" height="26">YTFast</a>
+          <p>Low-power desktop apps in Rust. YTFast, for YouTube Music, is the first.</p>
+        </div>
+        <div>
+          <p class="footer-title">Product</p>
+          <nav aria-label="Product">
+            <a href="what-is-ytfast.html">Guide</a>
+            <a href="download.html">Download</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="faq.html">FAQ</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-title">Company</p>
+          <nav aria-label="Company">
+            <a href="about.html">About</a>
+            <a href="custom-apps.html">Custom apps</a>
+            <a href="https://github.com/Likheet/YTFast">GitHub</a>
+            <a href="mailto:hello@ytmfast.com">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-title">Legal</p>
+          <nav aria-label="Legal">
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>YTFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube and YouTube Music are trademarks of Google LLC.</p>
+        <p>© 2026 YTFast</p>
+      </div>
     </div>
   </footer>
 
