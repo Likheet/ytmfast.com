@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — YTMFast</title>
+  <meta name="description" content="Who is building YTMFast, why, and how to get in touch.">
+  <link rel="canonical" href="https://ytmfast.com/about">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="YTMFast">
+  <meta property="og:title" content="About — YTMFast">
+  <meta property="og:description" content="Who is building YTMFast, why, and how to get in touch.">
+  <meta property="og:url" content="https://ytmfast.com/about">
+  <meta property="og:image" content="https://ytmfast.com/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1b1b1f">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="page">
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">YTMFast</a>
+      <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="what-is-ytmfast.html">Guide</a>
+        <a href="download.html">Download</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="#" data-site-href="github" data-site-if="github" hidden>GitHub</a>
+        <span class="badge">Download coming soon</span>
+        <button class="icon-btn" id="theme-toggle" aria-label="Switch between light and dark theme">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="prose">
+    <h1>About</h1>
+    <p class="lead">YTMFast is an independent software project with one aim: make YouTube Music on a PC cost almost nothing to run.</p>
+
+    <h2 id="why">Why it exists</h2>
+    <p>Music players used to be some of the lightest programs on a computer. Today most streaming apps are web pages inside a browser, and they use the CPU and memory to match. YTMFast rebuilds YouTube Music as a Windows app that idles at 0% CPU, stays under 200 MB of memory, and responds at once.</p>
+
+    <h2 id="who">Who is behind it</h2>
+    <p data-site-if="founder" hidden>YTMFast is built by <strong data-site="founder"></strong><span data-site-if="location" hidden>, based in <span data-site="location"></span></span>.</p>
+    <p data-site-unless="founder">YTMFast is built by an independent developer.</p>
+    <p>The app runs on Windows today. The next steps are posting the download and publishing the source code.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p data-site-if="email" hidden>For questions, feedback, or partnership enquiries, email <a href="#" data-site-href="email" data-site="email"></a>.</p>
+    <p data-site-if="github" hidden>To report a problem or follow development, visit the project on <a href="#" data-site-href="github">GitHub</a>.</p>
+    <p data-site-unless="email">Contact details will be added here soon.</p>
+
+    <h2 id="trademarks">Trademarks</h2>
+    <p>YTMFast is an independent project. It is not affiliated with, sponsored by, or endorsed by Google LLC or YouTube. YouTube and YouTube Music are trademarks of Google LLC.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <nav aria-label="Footer">
+        <a href="what-is-ytmfast.html">Guide</a>
+        <a href="download.html">Download</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="#" data-site-href="email" data-site-if="email" hidden>Contact</a>
+      </nav>
+      <p>YTMFast is an independent project, not affiliated with or endorsed by Google LLC or YouTube. YouTube Music is a trademark of Google LLC.</p>
+      <p>© 2026 <span data-site="company">YTMFast</span></p>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
